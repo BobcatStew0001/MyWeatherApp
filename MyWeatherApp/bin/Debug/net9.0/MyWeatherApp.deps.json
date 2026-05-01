@@ -1,0 +1,307 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "MyWeatherApp/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "11.0.0-preview.3.26207.106",
+          "Microsoft.Extensions.Configuration.Json": "11.0.0-preview.3.26207.106",
+          "Newtonsoft.Json": "13.0.5-beta1"
+        },
+        "runtime": {
+          "MyWeatherApp.dll": {}
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces/11.0.0-preview.3.26207.106": {
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.0.26.20806"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration/11.0.0-preview.3.26207.106": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "11.0.0-preview.3.26207.106",
+          "Microsoft.Extensions.Primitives": "11.0.0-preview.3.26207.106"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.0.26.20806"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration.Abstractions/11.0.0-preview.3.26207.106": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "11.0.0-preview.3.26207.106"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.0.26.20806"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration.FileExtensions/11.0.0-preview.3.26207.106": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "11.0.0-preview.3.26207.106",
+          "Microsoft.Extensions.Configuration.Abstractions": "11.0.0-preview.3.26207.106",
+          "Microsoft.Extensions.FileProviders.Abstractions": "11.0.0-preview.3.26207.106",
+          "Microsoft.Extensions.FileProviders.Physical": "11.0.0-preview.3.26207.106",
+          "Microsoft.Extensions.Primitives": "11.0.0-preview.3.26207.106"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.0.26.20806"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration.Json/11.0.0-preview.3.26207.106": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "11.0.0-preview.3.26207.106",
+          "Microsoft.Extensions.Configuration.Abstractions": "11.0.0-preview.3.26207.106",
+          "Microsoft.Extensions.Configuration.FileExtensions": "11.0.0-preview.3.26207.106",
+          "Microsoft.Extensions.FileProviders.Abstractions": "11.0.0-preview.3.26207.106",
+          "System.Text.Json": "11.0.0-preview.3.26207.106"
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Extensions.Configuration.Json.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.0.26.20806"
+          }
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Abstractions/11.0.0-preview.3.26207.106": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "11.0.0-preview.3.26207.106"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.0.26.20806"
+          }
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Physical/11.0.0-preview.3.26207.106": {
+        "dependencies": {
+          "Microsoft.Extensions.FileProviders.Abstractions": "11.0.0-preview.3.26207.106",
+          "Microsoft.Extensions.FileSystemGlobbing": "11.0.0-preview.3.26207.106",
+          "Microsoft.Extensions.Primitives": "11.0.0-preview.3.26207.106"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.0.26.20806"
+          }
+        }
+      },
+      "Microsoft.Extensions.FileSystemGlobbing/11.0.0-preview.3.26207.106": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.0.26.20806"
+          }
+        }
+      },
+      "Microsoft.Extensions.Primitives/11.0.0-preview.3.26207.106": {
+        "dependencies": {
+          "System.Memory": "4.6.3",
+          "System.Runtime.CompilerServices.Unsafe": "6.1.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.0.26.20806"
+          }
+        }
+      },
+      "Newtonsoft.Json/13.0.5-beta1": {
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.5.31230"
+          }
+        }
+      },
+      "System.Buffers/4.6.1": {},
+      "System.IO.Pipelines/11.0.0-preview.3.26207.106": {
+        "dependencies": {
+          "System.Buffers": "4.6.1",
+          "System.Memory": "4.6.3",
+          "System.Threading.Tasks.Extensions": "4.6.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.IO.Pipelines.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.0.26.20806"
+          }
+        }
+      },
+      "System.Memory/4.6.3": {},
+      "System.Runtime.CompilerServices.Unsafe/6.1.2": {},
+      "System.Text.Encodings.Web/11.0.0-preview.3.26207.106": {
+        "dependencies": {
+          "System.Buffers": "4.6.1",
+          "System.Memory": "4.6.3",
+          "System.Runtime.CompilerServices.Unsafe": "6.1.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Encodings.Web.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.0.26.20806"
+          }
+        }
+      },
+      "System.Text.Json/11.0.0-preview.3.26207.106": {
+        "dependencies": {
+          "Microsoft.Bcl.AsyncInterfaces": "11.0.0-preview.3.26207.106",
+          "System.Buffers": "4.6.1",
+          "System.IO.Pipelines": "11.0.0-preview.3.26207.106",
+          "System.Memory": "4.6.3",
+          "System.Runtime.CompilerServices.Unsafe": "6.1.2",
+          "System.Text.Encodings.Web": "11.0.0-preview.3.26207.106",
+          "System.Threading.Tasks.Extensions": "4.6.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Json.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.0.26.20806"
+          }
+        }
+      },
+      "System.Threading.Tasks.Extensions/4.6.3": {}
+    }
+  },
+  "libraries": {
+    "MyWeatherApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Bcl.AsyncInterfaces/11.0.0-preview.3.26207.106": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-17e4MEfIIOjxiuK4a0rQ62K+5hWV4wYZpwMg4UcqHphDl0a7jlV3OcMsm2dzbJQs5uOKyhEZZxGIte2TMp28ZA==",
+      "path": "microsoft.bcl.asyncinterfaces/11.0.0-preview.3.26207.106",
+      "hashPath": "microsoft.bcl.asyncinterfaces.11.0.0-preview.3.26207.106.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration/11.0.0-preview.3.26207.106": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Do6yieeVHdvwyIKED9oPfFHAH5PAkvwDjR+65u2ZS/ddSHvEtOd5e5rrAQyhIIflbCz13graO/XkBQQV5EJNkg==",
+      "path": "microsoft.extensions.configuration/11.0.0-preview.3.26207.106",
+      "hashPath": "microsoft.extensions.configuration.11.0.0-preview.3.26207.106.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration.Abstractions/11.0.0-preview.3.26207.106": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DAFozg1P/fA2yh36sYLS/NMDxGCFATUFNYbgQi1wbkFT2cFYqEsK/VYbTXsiXKQfr3G/d4Rnorpe0In2WBaMIA==",
+      "path": "microsoft.extensions.configuration.abstractions/11.0.0-preview.3.26207.106",
+      "hashPath": "microsoft.extensions.configuration.abstractions.11.0.0-preview.3.26207.106.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration.FileExtensions/11.0.0-preview.3.26207.106": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kzvWh5HYC9EZd/sXSq6Ips3LpznkqXRGmDJI9XdpMJLqliD6PC6ffp6OVMaQ64z7PrljtE9bZTMrVG+2VCsCEw==",
+      "path": "microsoft.extensions.configuration.fileextensions/11.0.0-preview.3.26207.106",
+      "hashPath": "microsoft.extensions.configuration.fileextensions.11.0.0-preview.3.26207.106.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration.Json/11.0.0-preview.3.26207.106": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-d6msKM6uFvcr4mAVWMlQvZVwhGs1kauyeMVEY7qzd1MVSNvE/A6MXiUjnXEBgzULO9H7P2KNd6KTB6XIbkc3Mg==",
+      "path": "microsoft.extensions.configuration.json/11.0.0-preview.3.26207.106",
+      "hashPath": "microsoft.extensions.configuration.json.11.0.0-preview.3.26207.106.nupkg.sha512"
+    },
+    "Microsoft.Extensions.FileProviders.Abstractions/11.0.0-preview.3.26207.106": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gFkzHF108G5VcXP2vByvxTEi3ixKn9K5Br+qOXYu+Ezyk6SDOLyl9jryVyEhwcAERzb6/ba3ZEE2gdPcQBbhgA==",
+      "path": "microsoft.extensions.fileproviders.abstractions/11.0.0-preview.3.26207.106",
+      "hashPath": "microsoft.extensions.fileproviders.abstractions.11.0.0-preview.3.26207.106.nupkg.sha512"
+    },
+    "Microsoft.Extensions.FileProviders.Physical/11.0.0-preview.3.26207.106": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FS9xmt0Tw94kEwPMhE3XEmwVx4HMIcgPvvCdWAfiqrEtL6wPNlrLEWxn8JDbp+rRl2MvXUuGJsU6Zt9DFtH+Fg==",
+      "path": "microsoft.extensions.fileproviders.physical/11.0.0-preview.3.26207.106",
+      "hashPath": "microsoft.extensions.fileproviders.physical.11.0.0-preview.3.26207.106.nupkg.sha512"
+    },
+    "Microsoft.Extensions.FileSystemGlobbing/11.0.0-preview.3.26207.106": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gI8O5FzTgw9yKbYKvGxDdymIackACfG+VF5cAisZExZcZ3/BaZ1YBN7jsURoiHUmaN8KTNwCqjxWhITHFq18Cw==",
+      "path": "microsoft.extensions.filesystemglobbing/11.0.0-preview.3.26207.106",
+      "hashPath": "microsoft.extensions.filesystemglobbing.11.0.0-preview.3.26207.106.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Primitives/11.0.0-preview.3.26207.106": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IBOlwyX13ax6/fXA7AoZFswKFytta9TExBv3/8qemMJGBoDXYlQEcw4WerHQCvmerJ5uP2o8bjIAvxcNdTZVLQ==",
+      "path": "microsoft.extensions.primitives/11.0.0-preview.3.26207.106",
+      "hashPath": "microsoft.extensions.primitives.11.0.0-preview.3.26207.106.nupkg.sha512"
+    },
+    "Newtonsoft.Json/13.0.5-beta1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cGxikAY78u8CPfIT7mkICvI2ZNL7oDsC+DzgVWxtU5DmNhF2qDcU3YheDitdO9TKIra6Y5rHRD2T7oEexbAbLA==",
+      "path": "newtonsoft.json/13.0.5-beta1",
+      "hashPath": "newtonsoft.json.13.0.5-beta1.nupkg.sha512"
+    },
+    "System.Buffers/4.6.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-N8GXpmiLMtljq7gwvyS+1QvKT/W2J8sNAvx+HVg4NGmsG/H+2k/y9QI23auLJRterrzCiDH+IWAw4V/GPwsMlw==",
+      "path": "system.buffers/4.6.1",
+      "hashPath": "system.buffers.4.6.1.nupkg.sha512"
+    },
+    "System.IO.Pipelines/11.0.0-preview.3.26207.106": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Idb+LIXwAXjlA2XEJmjqn7oBJ/SqwPjxtpHXl6PTJEP8mWTDdYpp+f1eZdFbf3ovYnGjRrFt4CNd6wq+qw04dg==",
+      "path": "system.io.pipelines/11.0.0-preview.3.26207.106",
+      "hashPath": "system.io.pipelines.11.0.0-preview.3.26207.106.nupkg.sha512"
+    },
+    "System.Memory/4.6.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qdcDOgnFZY40+Q9876JUHnlHu7bosOHX8XISRoH94fwk6hgaeQGSgfZd8srWRZNt5bV9ZW2TljcegDNxsf+96A==",
+      "path": "system.memory/4.6.3",
+      "hashPath": "system.memory.4.6.3.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/6.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2hBr6zdbIBTDE3EhK7NSVNdX58uTK6iHW/P/Axmm9sl1xoGSLqDvMtpecn226TNwHByFokYwJmt/aQQNlO5CRw==",
+      "path": "system.runtime.compilerservices.unsafe/6.1.2",
+      "hashPath": "system.runtime.compilerservices.unsafe.6.1.2.nupkg.sha512"
+    },
+    "System.Text.Encodings.Web/11.0.0-preview.3.26207.106": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SgwhdO9wvGcslITiiXuzALloNSKxVERDdjq+m20Y4ozKf71ZG4vZvv6a8J1K46daIQV3B3m3o6aEmhgs5oaK1A==",
+      "path": "system.text.encodings.web/11.0.0-preview.3.26207.106",
+      "hashPath": "system.text.encodings.web.11.0.0-preview.3.26207.106.nupkg.sha512"
+    },
+    "System.Text.Json/11.0.0-preview.3.26207.106": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7/lf9jNqkTuoi6UWnP810QssyAiVtOvEN4x8R/Odybp+Nzefn99+K0oxtjyySEQmwOmIJU0hSLW26iFvrvyYWQ==",
+      "path": "system.text.json/11.0.0-preview.3.26207.106",
+      "hashPath": "system.text.json.11.0.0-preview.3.26207.106.nupkg.sha512"
+    },
+    "System.Threading.Tasks.Extensions/4.6.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7sCiwilJLYbTZELaKnc7RecBBXWXA+xMLQWZKWawBxYjp6DBlSE3v9/UcvKBvr1vv2tTOhipiogM8rRmxlhrVA==",
+      "path": "system.threading.tasks.extensions/4.6.3",
+      "hashPath": "system.threading.tasks.extensions.4.6.3.nupkg.sha512"
+    }
+  }
+}
