@@ -73,7 +73,7 @@ public class Weather
         
         
         return $"The weather forcast for {cityName} today is {forecast}. \n {cityName} will see {description} and {tempObject} degrees Fahrenheit with a feel like of {feelsLikeObject} degrees Fahrenheit,\n with a humidity of {humidityObject}%." +
-               $"\n Words of Wisdon from Ron: {ron}";
+              
     }
     
 }
