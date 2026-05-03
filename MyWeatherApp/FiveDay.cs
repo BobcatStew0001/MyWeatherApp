@@ -32,7 +32,7 @@ public class FiveDay:Weather
             JObject mainItem = (JObject)item;
             JObject mainObject = (JObject)(mainItem).GetValue("main");
             string date = mainItem.GetValue("dt_txt").ToString();
-            string temp = mainObject.GetValue("temp").ToString();
+            string temp = mainObject.GetValue("day").ToString();
             string feelsLike = mainObject.GetValue("feels_like").ToString();
             string forecast = mainItem.GetValue("weather")[0].Value<string>("main");
             string description = mainItem.GetValue("weather")[0].Value<string>("description");
