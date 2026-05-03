@@ -18,6 +18,6 @@ public class WeatherMap:Weather
 
     public string GetFormattedMap()
     {
-        
+        return GetMap(); //Placeholder to prevent errors
     }
 }

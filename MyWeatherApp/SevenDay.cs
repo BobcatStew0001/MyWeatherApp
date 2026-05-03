@@ -2,9 +2,9 @@
 
 namespace MyWeatherApp;
 
-public class SixteenForecast:Weather
+public class SevenDay:Weather
 {
-    public SixteenForecast(string zip) : base(zip)
+    public SevenDay(string zip) : base(zip)
     {
         // api.openweathermap.org/data/2.5/forecast/daily?lat={lat}&lon={lon}&cnt={cnt}&appid={API key}
         

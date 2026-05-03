@@ -7,9 +7,9 @@ public class Program
         string zip = Weather.GetCity();
         CurrentWeather currentWeather = new CurrentWeather(zip);
         FiveDay fiveDay = new FiveDay(zip);
-        SixteenForecast sixteenForecast = new SixteenForecast(zip);
+        SevenDay sevenDay = new SevenDay(zip);
         //Console.WriteLine(fiveDay.GetFormattedFiveDay());
-       Console.WriteLine(sixteenForecast.GetFormattedSevenDay());
+       Console.WriteLine(sevenDay.GetFormattedSevenDay());
        
     }
 }
