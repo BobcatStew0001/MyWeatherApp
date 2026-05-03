@@ -27,3 +27,4 @@ C:\Users\brown\OneDrive\Documents\ReposCSharp\MyWeatherApp\MyWeatherApp\obj\Debu
 C:\Users\brown\OneDrive\Documents\ReposCSharp\MyWeatherApp\MyWeatherApp\obj\Debug\net9.0\MyWeatherApp.pdb
 C:\Users\brown\OneDrive\Documents\ReposCSharp\MyWeatherApp\MyWeatherApp\obj\Debug\net9.0\MyWeatherApp.genruntimeconfig.cache
 C:\Users\brown\OneDrive\Documents\ReposCSharp\MyWeatherApp\MyWeatherApp\obj\Debug\net9.0\ref\MyWeatherApp.dll
+C:\Users\brown\OneDrive\Documents\ReposCSharp\MyWeatherApp\MyWeatherApp\obj\Debug\net9.0\MyWeatherApp.sourcelink.json
