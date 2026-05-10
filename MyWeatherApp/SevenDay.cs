@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json.Linq;
 
-namespace MyWeatherApp;
+namespace MyWeatherApp; //Have to pay subscription to get this data
 
 public class SevenDay:Weather
 {

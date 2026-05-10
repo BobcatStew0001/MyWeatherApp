@@ -39,7 +39,8 @@ public class FiveDay:Weather
             string humidity = mainObject.GetValue("humidity").ToString();
             JObject windObject = (JObject)(mainItem).GetValue("wind");
             string windSpeed = windObject.GetValue("speed").ToString();
-            data.Add($"The 5 day forecast for {date} in {myCity} will be as follows {temp} \n {feelsLike},\n {forecast},\n {humidity},\n {windSpeed}.");
+            float chanceOfRain = (float)mainItem.GetValue("pop") * 100;
+            data.Add($"The 5 day forecast for {date} in {myCity} will be as follows {temp} \n {feelsLike},\n {forecast},\n Chance of Precipitation {chanceOfRain}% \n {humidity},\n {windSpeed}.");
              
         }
         

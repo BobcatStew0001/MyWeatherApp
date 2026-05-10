@@ -1,6 +1,6 @@
 ﻿namespace MyWeatherApp;
 
-public class WeatherMap:Weather
+public class WeatherMap:Weather //Need a subscription to get this data
 {
     protected string layer = "precipitation";
     protected int z = 8;

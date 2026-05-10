@@ -3,6 +3,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Configuration.Json;
 using Newtonsoft.Json.Linq;
 using System;
+using System.Drawing;
+
 namespace MyWeatherApp;
 
 public class CurrentWeather:Weather
@@ -24,8 +26,9 @@ public class CurrentWeather:Weather
         var ronUrl = "https://ron-swanson-quotes.herokuapp.com/v2/quotes";
         var ronResponse = client.GetStringAsync(ronUrl).Result;
         var ron = JArray.Parse(ronResponse)[0];
-        
+        Console.ForegroundColor = ConsoleColor.Blue;
         Console.WriteLine("Welcome to Zach's Weather App");
+        Console.ResetColor();
         Console.ForegroundColor = ConsoleColor.Red;
         Console.WriteLine($"Quote of the Day: {ron}");
         Console.ResetColor();
@@ -49,7 +52,8 @@ public class CurrentWeather:Weather
         var description = weatherObject.Value<string>("description");
 
         
-        
+        Console.ForegroundColor = ConsoleColor.Green;
         return $"The weather forecast for {cityName} today is {forecast}. \n {cityName} will see {description} with a temperature of {tempObject} degrees and a feels like temperature of {feelsLikeObject} degrees,\n with a humidity of {humidityObject}%.";
+        Console.ResetColor();
     }
 }
