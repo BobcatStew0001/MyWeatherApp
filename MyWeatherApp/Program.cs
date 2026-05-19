@@ -1,5 +1,8 @@
 ﻿using Microsoft.AspNetCore.Builder;
-
+/*To Do
+ Add the wwwroot folder to the project
+ inside it add the css and a site.css file
+ Then link it in the head of the _Layout.cshtml file in the Views folder*/
 
     
     
