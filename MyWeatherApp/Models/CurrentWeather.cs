@@ -22,15 +22,11 @@ public class CurrentWeather:Weather
     
     public string GetFormattedWeather()
     {
-        var client = new HttpClient();
-        var ronUrl = "https://ron-swanson-quotes.herokuapp.com/v2/quotes";
-        var ronResponse = client.GetStringAsync(ronUrl).Result;
-        var ron = JArray.Parse(ronResponse)[0];
+        
         Console.ForegroundColor = ConsoleColor.Blue;
         Console.WriteLine("Welcome to Zach's Weather App");
         Console.ResetColor();
-        Console.ForegroundColor = ConsoleColor.Red;
-        Console.WriteLine($"Quote of the Day: {ron}");
+        Console.ForegroundColor = ConsoleColor.Red; 
         Console.ResetColor();
         string? cityName = JObject.Parse(geoResponse).GetValue("name").ToString();
         string weatherDataResponse =
@@ -53,7 +49,11 @@ public class CurrentWeather:Weather
 
         
         Console.ForegroundColor = ConsoleColor.Green;
-        return $"The weather forecast for {cityName} today is {forecast}. \n {cityName} will see {description} with a temperature of {tempObject} degrees and a feels like temperature of {feelsLikeObject} degrees,\n with a humidity of {humidityObject}%.";
+        return $"The weather forecast for {cityName} today is {forecast}. \n {cityName} will see {description} with a temperature of {tempObject} degrees and a feels like temperature of {feelsLikeObject} degrees,\n with a humidity of {humidityObject}%.\n";
         Console.ResetColor();
     }
+
+   
+
+
 }

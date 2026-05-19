@@ -1,24 +1,28 @@
-﻿<form method="post">
-    <input type="text" name="zip" placeholder="Enter your zip code" />
+﻿<form class="zip-form"
+      method="post">
+    <input type="text" name="zip" placeholder="Enter your zip code"/>
     <button type="submit">Get Weather</button>
-    </form>
+</form>
 
-@if(ViewBag.CurrentWeather != null)
+@if (ViewBag.CurrentWeather != null)
 {
-    <p>@ViewBag.CurrentWeather</p>
-    @foreach (var item in ViewBag.fiveDay)
-    {
-        <div>
-            <p>Date: @item.Date</p>
-            <p>Temperature: @item.Temp</p>
-            <p>Feels Like Temerature: @item.FeelsLike</p>
-            <p>Forecast: @item.Forecast</p>
-            <p>Description: @item.Description</p>
-            <p>Humidity: @item.Humidity</p>
-            <p>Wind Speed: @item.WindSpeed</p>
-            <p>Chance of Rain: @item.ChanceOfRain%</p>
-            
-        </div>
-        
-    }
-}
+    <p class="current-weather">@ViewBag.CurrentWeather</p>
+    <div class="forecast-container">
+        @foreach (var item in ViewBag.fiveDay)
+        {
+            <div class="five-day-forecast">
+                <p>Date: @item.Date</p>
+                <p>Temperature: @item.Temp</p>
+                <p>Feels Like Temerature: @item.FeelsLike</p>
+                <p>Forecast: @item.Forecast</p>
+                <p>Description: @item.Description</p>
+                <p>Humidity: @item.Humidity</p>
+                <p>Wind Speed: @item.WindSpeed</p>
+                <p>Chance of Rain: @item.ChanceOfRain%</p>
+            </div>
+        }
+
+    </div>
+    <p class="quote">Quote of the Day: @ViewBag.Ron</p>
+
+}   

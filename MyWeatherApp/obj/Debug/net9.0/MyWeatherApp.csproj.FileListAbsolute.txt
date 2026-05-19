@@ -43,3 +43,5 @@ C:\Users\brown\OneDrive\Documents\ReposCSharp\MyWeatherApp\MyWeatherApp\obj\Debu
 C:\Users\brown\OneDrive\Documents\ReposCSharp\MyWeatherApp\MyWeatherApp\obj\Debug\net9.0\staticwebassets.build.json.cache
 C:\Users\brown\OneDrive\Documents\ReposCSharp\MyWeatherApp\MyWeatherApp\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\brown\OneDrive\Documents\ReposCSharp\MyWeatherApp\MyWeatherApp\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\brown\OneDrive\Documents\ReposCSharp\MyWeatherApp\MyWeatherApp\bin\Debug\net9.0\MyWeatherApp.staticwebassets.runtime.json
+C:\Users\brown\OneDrive\Documents\ReposCSharp\MyWeatherApp\MyWeatherApp\obj\Debug\net9.0\compressed\rmfejzccii-99hqk7uxc7.gz
