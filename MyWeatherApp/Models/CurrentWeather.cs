@@ -5,7 +5,7 @@ using Newtonsoft.Json.Linq;
 using System;
 using System.Drawing;
 
-namespace MyWeatherApp;
+namespace MyWeatherApp.Models;
 
 public class CurrentWeather:Weather
 {

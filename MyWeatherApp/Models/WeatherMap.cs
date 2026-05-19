@@ -1,4 +1,4 @@
-﻿namespace MyWeatherApp;
+﻿namespace MyWeatherApp.Models;
 
 public class WeatherMap:Weather //Need a subscription to get this data
 {

@@ -4,7 +4,7 @@ using Microsoft.Extensions.Configuration.Json;
 using Newtonsoft.Json.Linq;
 using System;
 
-namespace MyWeatherApp;
+namespace MyWeatherApp.Models;
 
 public class Weather
 {

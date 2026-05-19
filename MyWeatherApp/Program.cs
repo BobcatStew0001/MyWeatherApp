@@ -1,16 +1,23 @@
-﻿using System; 
-namespace MyWeatherApp;
-public class Program
-{
-    public static void Main(string[] args)
-    {
-        string zip = Weather.GetCity();
-        FiveDay fiveDay = new FiveDay(zip);
-        //SevenDay sevenDay = new SevenDay(zip);
-        CurrentWeather current = new CurrentWeather(zip);
-        Console.WriteLine(current.GetFormattedWeather());
-        Console.WriteLine(fiveDay.GetFormattedFiveDay());
-       //Console.WriteLine(sevenDay.GetFormattedSevenDay());
+﻿using Microsoft.AspNetCore.Builder;
+
+
+    
+    
+var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddControllersWithViews();
+
+var app = builder.Build();
+
+app.UseHttpsRedirection();
+app.UseStaticFiles();
+app.UseRouting();
+app.UseAuthorization();
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Weather}/{action=Index}/{id?}");
+
+app.Run();
              
-    }
-}
+    

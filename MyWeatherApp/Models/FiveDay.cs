@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json.Linq;
 
-namespace MyWeatherApp;
+namespace MyWeatherApp.Models;
 
 public class FiveDay:Weather
 {
@@ -15,18 +15,11 @@ public class FiveDay:Weather
         return clientResponse.Content.ReadAsStringAsync().Result;
     }
 
-    public string GetFormattedFiveDay()
+    public List<ForecastItem> GetFormattedFiveDay()
     {
-        Console.ForegroundColor = ConsoleColor.Blue;
-        Console.WriteLine("Five Day Forecast:");
-        Console.ResetColor();
-
-        Console.ForegroundColor = ConsoleColor.DarkGreen;
-        Console.WriteLine($"Here is your 5 day forecast for {myCity}:");
-        Console.ResetColor();
         string fiveDayData = GetFiveDayData();
         var fiveDayForecast = JObject.Parse(fiveDayData).GetValue("list");
-        var data = new List<string>();
+        var data = new List<ForecastItem>();
         foreach (var item in fiveDayForecast)
         {
             JObject mainItem = (JObject)item;
@@ -40,11 +33,21 @@ public class FiveDay:Weather
             JObject windObject = (JObject)(mainItem).GetValue("wind");
             string windSpeed = windObject.GetValue("speed").ToString();
             float chanceOfRain = (float)mainItem.GetValue("pop") * 100;
-            data.Add($"The 5 day forecast for {date} in {myCity} will be as follows {temp} \n {feelsLike},\n {forecast},\n Chance of Precipitation {chanceOfRain}% \n {humidity},\n {windSpeed}.");
-             
+            string[] splitDate = date.Split(' ');
+            if (splitDate[1] == "12:00:00")
+            {
+                data.Add(new ForecastItem
+                {
+                    Date = date, Temp = temp, FeelsLike = feelsLike, Forecast = forecast, Description = description,
+                    Humidity = humidity, WindSpeed = windSpeed, ChanceOfRain = chanceOfRain
+                });
+            }
+
+
+
         }
-        
-        return string.Join( "\n", data);
-            
+
+        return data; 
+
     }
 }
