@@ -2,7 +2,7 @@
 
 namespace MyWeatherApp.Models; //Have to pay subscription to get this data
 
-public class SevenDay:Weather
+public class SevenDay:WeatherService
 {
     public SevenDay(string zip) : base(zip)
     {

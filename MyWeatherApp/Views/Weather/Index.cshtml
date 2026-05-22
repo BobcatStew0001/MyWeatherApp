@@ -8,10 +8,10 @@
 {
     <p class="current-weather">@ViewBag.CurrentWeather</p>
     <div class="hourly-container">
-        @foreach (var item in ViewBag.hourly)
+        @foreach (var item in ViewBag.Hourly)
         {
             <div class="hourly-day">
-                <img src="https://openweathermap.org/img/wn/@item.Icon2x.png"/>
+                <img src="https://openweathermap.org/img/wn/@item.Icon@@2x.png"/>
                 <p>Date-Hourly: @item.DateHourly</p>
                 <p>Temperature: @item.Temp</p>
                 <p>Feels Like Temerature: @item.FeelsLike</p>
@@ -24,6 +24,7 @@
             </div>
         }
     </div>
-}
     <p class="quote">Quote of the Day: @ViewBag.Ron</p>
+}
+  
 

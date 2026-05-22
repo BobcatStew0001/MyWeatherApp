@@ -1,0 +1,20 @@
+@if (ViewBag.FiveDay != null)
+{
+   
+    <div class = "five-day-container">
+        @foreach (var item in ViewBag.FiveDay)
+        {
+            <div class="five-day-forecast">
+                <img src="https://openweathermap.org/img/wn/@item.Icon@@2x.png"/>
+                <p>Date:@item.Date</p>
+                <p>Temperature: @item.Temp</p>
+                <p>Feels Like Temerature: @item.FeelsLike</p>
+                <p>Forecast: @item.Forecast</p>
+                <p>Description: @item.Description</p>
+                <p>Humidity: @item.Humidity</p>
+                <p>Wind Speed: @item.WindSpeed</p>
+                <p>Chance of Rain: @item.ChanceOfRain%</p>
+            </div>
+        }
+    </div>
+}

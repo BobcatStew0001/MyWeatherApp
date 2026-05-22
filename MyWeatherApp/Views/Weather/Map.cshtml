@@ -1,0 +1,23 @@
+<div id="map" style="height: 600px; width: 100%; position: relative; z-index: 1;"></div>
+
+<script>
+    var lat = parseFloat('@ViewBag.Lat');
+    var lon = parseFloat('@ViewBag.Lon');
+    var apiKey = '@ViewBag.ApiKey';
+    
+    var map = L.map('map').setView([lat, lon], 10);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+    
+    var precipitation = L.tileLayer(`https://tile.openweathermap.org/map/precipitation_new/{z}/{x}/{y}.png?appid=${apiKey}`);
+    var clouds = L.tileLayer(`https://tile.openweathermap.org/map/clouds_new/{z}/{x}/{y}.png?appid=${apiKey}`);
+    var temp = L.tileLayer(`https://tile.openweathermap.org/map/temp_new/{z}/{x}/{y}.png?appid=${apiKey}`);
+    var wind = L.tileLayer(`https://tile.openweathermap.org/map/wind_new/{z}/{x}/{y}.png?appid=${apiKey}`);
+
+    var overlays = {
+        "Precipitation": precipitation,
+        "Clouds": clouds,
+        "Temperature": temp,
+        "Wind": wind
+    };
+    L.control.layers(null, overlays).addTo(map);
+</script>

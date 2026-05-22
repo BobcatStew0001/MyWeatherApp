@@ -8,6 +8,7 @@ body{
     justify-content:center;
     align-items: center;
     min-height: 100vh;
+    padding-top: 60px;
 }
 .current-weather{
     border-bottom:3px solid #b84800;
@@ -44,4 +45,44 @@ body{
     border: 3px solid #e0e0e0;
     margin: 10px;
     padding: 10px;
+}
+.five-day-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.five-day-forecast {
+    border: 3px solid #e0e0e0;
+    margin: 10px;
+    padding: 10px;
+}
+nav {
+    width: 100%;
+    background-color: #16213e;
+    padding: 15px 30px;
+    display: flex;
+    gap: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: floralwhite;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    color: #b84800;
+}
+#map {
+    height: 600px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    align-self: stretch;
 }

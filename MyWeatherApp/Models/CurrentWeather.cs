@@ -1,59 +1,20 @@
-﻿using System.Net.Http;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Configuration.Json;
-using Newtonsoft.Json.Linq;
-using System;
-using System.Drawing;
+﻿namespace MyWeatherApp.Models;
 
-namespace MyWeatherApp.Models;
-
-public class CurrentWeather:Weather
+public class CurrentWeather
 {
-    public CurrentWeather(string zip) : base(zip)
-    {
-    }
-
-    public string GetWeatherData()//Second API call to get the weather data
-    {
-        var clientHttp = new HttpClient(); 
-        var clientResponse = clientHttp.GetAsync($"https://api.openweathermap.org/data/2.5/weather?lat={myLat}&lon={myLon}&appid={apiKey}&units=imperial").Result;
-        return clientResponse.Content.ReadAsStringAsync().Result;
-    }
-    
-    public string GetFormattedWeather()
-    {
-        
-        Console.ForegroundColor = ConsoleColor.Blue;
-        Console.WriteLine("Welcome to Zach's Weather App");
-        Console.ResetColor();
-        Console.ForegroundColor = ConsoleColor.Red; 
-        Console.ResetColor();
-        string? cityName = JObject.Parse(geoResponse).GetValue("name").ToString();
-        string weatherDataResponse =
-            GetWeatherData();
-        JObject mainObject =
-            (JObject)JObject.Parse(weatherDataResponse).GetValue("main");
-        
-        string? tempObject =
-            mainObject.GetValue("temp").ToString();
-        
-        string? humidityObject =
-            mainObject.GetValue("humidity").ToString();
-        
-        string? feelsLikeObject =
-            mainObject.GetValue("feels_like").ToString();
-
-        var weatherObject = JObject.Parse(weatherDataResponse).GetValue("weather")[0];
-        var forecast = weatherObject.Value<string>("main");
-        var description = weatherObject.Value<string>("description");
-
-        
-        Console.ForegroundColor = ConsoleColor.Green;
-        return $"The weather forecast for {cityName} today is {forecast}. \n {cityName} will see {description} with a temperature of {tempObject} degrees and a feels like temperature of {feelsLikeObject} degrees,\n with a humidity of {humidityObject}%.\n";
-        Console.ResetColor();
-    }
-
+   private CurrentWeatherData _weatherData;
+   public CurrentWeather(CurrentWeatherData weatherData)
+   {
+      _weatherData = weatherData; 
+   }
    
-
-
+   public string GetFormattedWeather()
+   {
+      string rainInfo = _weatherData.Rain != null ? 
+         $"It is raining with {_weatherData.Rain} inches of rain." 
+         : "Currently there is no rain in sight.";
+      return $"The weather forecast for {_weatherData.CityName} is {_weatherData.Description} with a temperature of {_weatherData.Temp} \n" +
+             $"and a humidity of {_weatherData.Humidity}.The feels like temperature is {_weatherData.FeelsLike}.\n"
+             + $"The wind speed is {_weatherData.WindSpeed}. {rainInfo}";
+   }
 }
