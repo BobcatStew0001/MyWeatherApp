@@ -33,3 +33,15 @@ body{
     margin: 5px;
     padding: 5px;
 }
+.hourly-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hourly-day {
+    border: 3px solid #e0e0e0;
+    margin: 10px;
+    padding: 10px;
+}

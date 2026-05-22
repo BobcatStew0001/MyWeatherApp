@@ -7,11 +7,12 @@
 @if (ViewBag.CurrentWeather != null)
 {
     <p class="current-weather">@ViewBag.CurrentWeather</p>
-    <div class="forecast-container">
-        @foreach (var item in ViewBag.fiveDay)
+    <div class="hourly-container">
+        @foreach (var item in ViewBag.hourly)
         {
-            <div class="five-day-forecast">
-                <p>Date: @item.Date</p>
+            <div class="hourly-day">
+                <img src="https://openweathermap.org/img/wn/@item.Icon2x.png"/>
+                <p>Date-Hourly: @item.DateHourly</p>
                 <p>Temperature: @item.Temp</p>
                 <p>Feels Like Temerature: @item.FeelsLike</p>
                 <p>Forecast: @item.Forecast</p>
@@ -19,10 +20,10 @@
                 <p>Humidity: @item.Humidity</p>
                 <p>Wind Speed: @item.WindSpeed</p>
                 <p>Chance of Rain: @item.ChanceOfRain%</p>
+                <p>Rain: @item.RainHourly</p>
             </div>
         }
-
     </div>
+}
     <p class="quote">Quote of the Day: @ViewBag.Ron</p>
 
-}   

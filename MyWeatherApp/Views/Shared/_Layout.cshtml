@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="~/css/site.css">
 </head>
 <body>
+<nav>
+    <a asp-controller="Weather" asp-action="Index">Home</a>
+    <a asp-controller="Weather" asp-action="WeatherMap"> Weather Map </a>
+    <a asp-controller="Weather" asp-action="FiveDay"> 5 Day Forecast </a>
+</nav>
 @RenderBody()
 </body>
 </html>
