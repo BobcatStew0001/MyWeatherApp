@@ -1,7 +1,7 @@
 ﻿
 
 body{
-    background-color: #1a1a2e;
+    background-color: white;
     color:floralwhite;
     display: flex;
     flex-direction:column;
@@ -9,11 +9,18 @@ body{
     align-items: center;
     min-height: 100vh;
     padding-top: 60px;
+    background-image: url('../css/CSS_Assets/weather_app_background.jpg');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: darken;
 }
 .current-weather{
     border-bottom:3px solid #b84800;
     margin: 10px;
     padding: 10px;
+    background-color:rgba(26,26,46,0.30)
    
 }
 .forecast-container {
@@ -39,12 +46,14 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    
 }
 
 .hourly-day {
     border: 3px solid #e0e0e0;
     margin: 10px;
     padding: 10px;
+    background-color:rgba(26,26,46,0.30)
 }
 .five-day-container {
     display: flex;
@@ -57,6 +66,7 @@ body{
     border: 3px solid #e0e0e0;
     margin: 10px;
     padding: 10px;
+    background-color:rgba(26,26,46,0.30)
 }
 nav {
     width: 100%;
@@ -85,4 +95,32 @@ nav a:hover {
     position: relative;
     z-index: 1;
     align-self: stretch;
+}
+.quote{
+    font-size: 1.0rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border-bottom: 3px solid #b84800;
+    background-color:rgba(26,26,46,0.30)
+}
+.page-header {
+    width: 100%;
+    height: 100px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.current-weather-header {
+    background-image: url('/css/CSS_Assets/current-weather-header.png');
+}
+
+.five-day-header {
+    background-image: url('/css/CSS_Assets/five-day-forecast-header.png');
+}
+
+.map-header {
+    background-image: url('/css/CSS_Assets/weather-maps-header.png');
 }

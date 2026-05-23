@@ -1,9 +1,10 @@
-﻿<form class="zip-form"
+﻿<div class="page-header current-weather-header"></div>
+
+<form class="zip-form"
       method="post">
     <input type="text" name="zip" placeholder="Enter your zip code"/>
     <button type="submit">Get Weather</button>
 </form>
-
 @if (ViewBag.CurrentWeather != null)
 {
     <p class="current-weather">@ViewBag.CurrentWeather</p>

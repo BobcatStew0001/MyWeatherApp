@@ -15,6 +15,7 @@
 
     <ItemGroup>
       <None Include="bin\Debug\net9.0\appsettings.json" />
+      <None Include="wwwroot\CSS\CSS_Assets\weather_app_background.jpg" />
     </ItemGroup>
 
 </Project>
